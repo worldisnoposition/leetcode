@@ -1,0 +1,3 @@
+rootProject.name = 'mark-leetcode'
+include 'mark-leetcode-easy'
+
