@@ -16,7 +16,6 @@ import java.util.Map;
  * Because nums[0] + nums[1] = 2 + 7 = 9,
  * return [0, 1].
  * 从数组里找到2个相加等于target的数
- *
  */
 public class TwoSum {
     public static void main(String[] args) {
