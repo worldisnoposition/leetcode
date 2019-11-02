@@ -1,0 +1,7 @@
+import javax.tools.JavaCompiler
+
+group 'mark.code'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
