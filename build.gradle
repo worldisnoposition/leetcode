@@ -34,6 +34,7 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
+    apply plugin: 'maven'
     //spring boot 插件
     apply plugin: 'org.springframework.boot'
     //A Gradle plugin that provides Maven-like dependency management functionality
@@ -52,3 +53,21 @@ subprojects {
         manifest.attributes provider: 'gradle'
     }
 }
+//project(":mark-spring-cloud-base") {
+project(":mark-eureka-client-provider") {
+    apply plugin: "java"
+
+    dependencies {
+        compile project(":mark-spring-cloud-base")
+//        compile "mark.code:mark-spring-cloud-base:1.0-SNAPSHOT"
+    }
+}
+project(":mark-eureka-client-consumer") {
+    apply plugin: "java"
+
+    dependencies {
+        compile project(":mark-spring-cloud-base")
+//        compile "mark.code:mark-spring-cloud-base:1.0-SNAPSHOT"
+    }
+}
+

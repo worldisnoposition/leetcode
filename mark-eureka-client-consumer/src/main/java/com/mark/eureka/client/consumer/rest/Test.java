@@ -1,5 +1,6 @@
 package com.mark.eureka.client.consumer.rest;
 
+import com.mark.eureka.base.UserVO;
 import com.mark.eureka.client.consumer.feign.UserFeign;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,11 @@ public class Test {
     private UserFeign userFeign;
     @RequestMapping("/test")
     public String index(@RequestParam String name) {
-        return userFeign.getUser(name);
+        System.out.println(name);
+        UserVO userVO = new UserVO();
+        userVO.setId(1L);
+        userVO.setName("name");
+        userVO.setExtend("extends");
+        return userFeign.saveUser(userVO);
     }
 }

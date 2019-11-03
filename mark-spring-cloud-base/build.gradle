@@ -5,3 +5,52 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 sourceCompatibility = 1.8
 
+dependencies {
+    compile('org.projectlombok:lombok:1.18.2')
+}
+def localMavenRepo = 'file://D:\\Program File\\apache-maven-3.5.0'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'file://D:\\数据文件\\mavenWarehouse\\com')
+
+            //构造项目的Pom文件
+            pom.project {
+                name = project.name
+                packaging = 'jar'
+                description = 'description'
+            }
+        }
+
+    }
+}
+
+static def releaseTime() {
+    return new Date().format("yyyyMMddHHmm", TimeZone.getDefault())
+}
+
+//删除 旧的.jar包 任务
+//task clearJar(type: Delete) {
+//    FileTree tree = fileTree("build/libs/")
+//    tree.visit {
+//        element ->
+//            if (element.getName().endsWith(".jar")) {
+//                println "$element.file.name" + " " + element.getName()
+//                delete element.file
+//            }
+//    }
+//}
+//makeJar.dependsOn(clearJar,build)
+task makeJar(type: Jar){
+    //指定生成的jar名
+    baseName 'xxx'+ releaseTime()
+    //从哪里打包class文件
+    from('build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/hd/test/sdk/')
+    //打包到jar后的目录结构
+    into('com/hd/test/sdk/')
+    //去掉不需要打包的目录和文件
+    exclude('BuildConfig.class','R.class')
+    //去掉R$开头的文件
+    exclude{it.name.startsWith('R$')}
+}
+makeJar.dependsOn(build)
