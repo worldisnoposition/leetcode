@@ -1,4 +1,4 @@
-package com.mark.eureka.client;
+package com.mark.eureka.client.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,8 +7,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class EurekaClientApplication {
+@EnableFeignClients
+public class EurekaClientConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApplication.class, args);
+        SpringApplication.run(EurekaClientConsumerApplication.class, args);
     }
 }

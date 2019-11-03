@@ -3,4 +3,6 @@ include 'mark-leetcode-easy'
 include 'mark-spring-cloud-base'
 include 'mark-eureka-server'
 include 'mark-eureka-client'
+include 'mark-eureka-client-provider'
+include 'mark-eureka-client-consumer'
 

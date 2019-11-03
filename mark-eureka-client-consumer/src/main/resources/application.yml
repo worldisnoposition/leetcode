@@ -1,8 +1,8 @@
 server:
-  port: 8762
+  port: 8764
 spring:
   application:
-    name: mark-eureka-client
+    name: mark-eureka-client-consumer
 eureka:
   client:
     serviceUrl:
