@@ -20,6 +20,7 @@ public class Test {
         userVO.setId(1L);
         userVO.setName("name");
         userVO.setExtend("extends");
+        userVO.setAge(10);
         return userFeign.saveUser(userVO);
     }
 }

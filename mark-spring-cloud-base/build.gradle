@@ -1,13 +1,31 @@
-import javax.tools.JavaCompiler
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "io.freefair.gradle:lombok-plugin:4.1.3"
+    }
+}
 
 group 'mark.code'
 version '1.0-SNAPSHOT'
 apply plugin: 'java'
 sourceCompatibility = 1.8
 
+//    repositories {
+//        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+//        jcenter()
+//        mavenCentral()
+//    }
+
 dependencies {
     compile('org.projectlombok:lombok:1.18.2')
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
 }
+
+
 def localMavenRepo = 'file://D:\\Program File\\apache-maven-3.5.0'
 uploadArchives {
     repositories {
@@ -41,16 +59,16 @@ static def releaseTime() {
 //    }
 //}
 //makeJar.dependsOn(clearJar,build)
-task makeJar(type: Jar){
+task makeJar(type: Jar) {
     //指定生成的jar名
-    baseName 'xxx'+ releaseTime()
+    baseName 'xxx' + releaseTime()
     //从哪里打包class文件
     from('build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/hd/test/sdk/')
     //打包到jar后的目录结构
     into('com/hd/test/sdk/')
     //去掉不需要打包的目录和文件
-    exclude('BuildConfig.class','R.class')
+    exclude('BuildConfig.class', 'R.class')
     //去掉R$开头的文件
-    exclude{it.name.startsWith('R$')}
+    exclude { it.name.startsWith('R$') }
 }
 makeJar.dependsOn(build)
