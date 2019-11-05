@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client/mark-eureka-client.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client/mark-eureka-client.iml" group="mark-eureka-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client-consumer/mark-eureka-client-consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client-consumer/mark-eureka-client-consumer.iml" group="mark-eureka-client-consumer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client-consumer/mark-eureka-client-consumer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client-consumer/mark-eureka-client-consumer_main.iml" group="mark-eureka-client-consumer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client-consumer/mark-eureka-client-consumer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client-consumer/mark-eureka-client-consumer_test.iml" group="mark-eureka-client-consumer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client-provider.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client-provider.iml" group="mark-eureka-client-provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client-provider/mark-eureka-client-provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client-provider/mark-eureka-client-provider_main.iml" group="mark-eureka-client-provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client-provider/mark-eureka-client-provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client-provider/mark-eureka-client-provider_test.iml" group="mark-eureka-client-provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client/mark-eureka-client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client/mark-eureka-client_main.iml" group="mark-eureka-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-client/mark-eureka-client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-client/mark-eureka-client_test.iml" group="mark-eureka-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server.iml" group="mark-eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_main.iml" group="mark-eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_test.iml" group="mark-eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/mark-leetcode.iml" filepath="$PROJECT_DIR$/mark-leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy.iml" group="mark-leetcode-easy" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy_main.iml" group="mark-leetcode-easy" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy_test.iml" group="mark-leetcode-easy" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode_main.iml" group="mark-leetcode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode_test.iml" group="mark-leetcode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-spring-cloud-base/mark-spring-cloud-base.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-spring-cloud-base/mark-spring-cloud-base.iml" group="mark-spring-cloud-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-spring-cloud-base/mark-spring-cloud-base_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-spring-cloud-base/mark-spring-cloud-base_main.iml" group="mark-spring-cloud-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-spring-cloud-base/mark-spring-cloud-base_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-spring-cloud-base/mark-spring-cloud-base_test.iml" group="mark-spring-cloud-base" />
+    </modules>
+  </component>
+</project>

@@ -53,8 +53,8 @@ subprojects {
         manifest.attributes provider: 'gradle'
     }
 }
-//project(":mark-spring-cloud-base") {
-project(":mark-eureka-client-provider") {
+
+project(":mark-eureka-client-consumer") {
     apply plugin: "java"
 
     dependencies {
@@ -62,7 +62,8 @@ project(":mark-eureka-client-provider") {
 //        compile "mark.code:mark-spring-cloud-base:1.0-SNAPSHOT"
     }
 }
-project(":mark-eureka-client-consumer") {
+//project(":mark-spring-cloud-base") {
+project(":mark-eureka-client-provider") {
     apply plugin: "java"
 
     dependencies {

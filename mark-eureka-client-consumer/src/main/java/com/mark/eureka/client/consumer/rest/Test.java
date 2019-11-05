@@ -2,7 +2,6 @@ package com.mark.eureka.client.consumer.rest;
 
 import com.mark.eureka.base.UserVO;
 import com.mark.eureka.client.consumer.feign.UserFeign;
-import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:/Program File/gradle-5.6.2-bin/gradle-5.6.2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/mark-eureka-client" />
+            <option value="$PROJECT_DIR$/mark-eureka-client-consumer" />
+            <option value="$PROJECT_DIR$/mark-eureka-client-provider" />
+            <option value="$PROJECT_DIR$/mark-eureka-server" />
+            <option value="$PROJECT_DIR$/mark-leetcode-easy" />
+            <option value="$PROJECT_DIR$/mark-spring-cloud-base" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

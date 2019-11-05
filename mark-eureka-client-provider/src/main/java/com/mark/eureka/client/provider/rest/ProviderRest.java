@@ -22,6 +22,7 @@ public class ProviderRest {
 
     @RequestMapping(value = "/saveUser", method = RequestMethod.POST)
     public String saveUser(@RequestBody UserVO userVO) {
+
         return "这是服务提供者，参数：" + userVO;
     }
 }
