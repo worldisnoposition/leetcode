@@ -5,4 +5,5 @@ include 'mark-eureka-server'
 include 'mark-eureka-client'
 include 'mark-eureka-client-provider'
 include 'mark-eureka-client-consumer'
+include 'mark-job'
 

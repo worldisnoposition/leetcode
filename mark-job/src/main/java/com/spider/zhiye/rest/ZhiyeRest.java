@@ -64,6 +64,8 @@ public class ZhiyeRest {
     public String saveSingleData(@RequestBody(required = false) String param,
                                  @RequestParam(required = false) String param2) throws UnsupportedEncodingException {
         try {
+            log.info(param);
+            log.info(param2);
             param = URLDecoder.decode(param, "utf-8");
             log.info(param);
             if (param.endsWith("=")) {
