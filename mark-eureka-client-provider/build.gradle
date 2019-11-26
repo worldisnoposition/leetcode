@@ -17,6 +17,7 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-feign:1.4.0.RELEASE')
     compile('org.springframework.cloud:spring-cloud-starter-hystrix:1.4.5.RELEASE')
     compile('mark.code:mark-spring-cloud-base:1.0-SNAPSHOT')
+    compile 'org.springframework.cloud:spring-cloud-starter-zuul:1.4.3.RELEASE'
 }
 
 //subprojects {

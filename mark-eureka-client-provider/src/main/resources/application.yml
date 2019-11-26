@@ -7,3 +7,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone:   http://localhost:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+zuul:
+  routes:
+    service-name:
+      path: mark-eureka-client-consumer
+      service-id: mark-eureka-client-consumer

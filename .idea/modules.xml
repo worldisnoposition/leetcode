@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server.iml" group="mark-eureka-server" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_main.iml" group="mark-eureka-server" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-eureka-server/mark-eureka-server_test.iml" group="mark-eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-job.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-job.iml" group="mark-job" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-job/mark-job_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-job/mark-job_main.iml" group="mark-job" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-job/mark-job_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-job/mark-job_test.iml" group="mark-job" />
       <module fileurl="file://$PROJECT_DIR$/mark-leetcode.iml" filepath="$PROJECT_DIR$/mark-leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy.iml" group="mark-leetcode-easy" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mark-leetcode-easy/mark-leetcode-easy_main.iml" group="mark-leetcode-easy" />

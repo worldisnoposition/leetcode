@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/mark-eureka-client-consumer" />
             <option value="$PROJECT_DIR$/mark-eureka-client-provider" />
             <option value="$PROJECT_DIR$/mark-eureka-server" />
+            <option value="$PROJECT_DIR$/mark-job" />
             <option value="$PROJECT_DIR$/mark-leetcode-easy" />
             <option value="$PROJECT_DIR$/mark-spring-cloud-base" />
           </set>
