@@ -1,8 +1,4 @@
-package com.hebo.cache.test;
-
-import java.lang.ref.PhantomReference;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
+package com.mark.cache.test;
 
 public class TestTasks {
     static TaskManager taskManager = new TaskManager();

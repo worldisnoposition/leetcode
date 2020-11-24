@@ -1,8 +1,7 @@
-package com.hebo.ipc.process;
+package com.mark.ipc.process;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
-import java.util.Set;
 
 public class ProcessUtil {
     public static void main(String[] args) throws InterruptedException {

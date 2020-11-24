@@ -1,6 +1,6 @@
-package com.hebo.ipc.mbb;
+package com.mark.ipc.mbb;
 
-import sun.misc.Contended;
+//import sun.misc.Contended;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ public class MbbConsumer {
     }
 
 }
-@Contended
+//@Contended
  class VolatileLong {
     public volatile long value = 0L;
 }

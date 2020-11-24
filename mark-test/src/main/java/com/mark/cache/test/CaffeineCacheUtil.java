@@ -1,12 +1,9 @@
-package com.hebo.cache.test;
+package com.mark.cache.test;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
 
 public class CaffeineCacheUtil implements CacheUtil {
     Cache<String, String> cache = Caffeine.newBuilder()

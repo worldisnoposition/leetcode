@@ -1,4 +1,4 @@
-package com.hebo.ipc.mbb;
+package com.mark.ipc.mbb;
 
 import java.io.IOException;
 
