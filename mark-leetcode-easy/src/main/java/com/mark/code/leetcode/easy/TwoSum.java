@@ -1,7 +1,14 @@
 package com.mark.code.leetcode.easy;
 
+import lombok.experimental.Wither;
+
+import javax.xml.ws.WebFault;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Vector;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 第1题
@@ -17,9 +24,16 @@ import java.util.Map;
  * return [0, 1].
  * 从数组里找到2个相加等于target的数
  */
+@Wither
 public class TwoSum {
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws Throwable {
+//        Object
+        Thread t = new Thread();
+        Thread.yield();
+        ReentrantLock lock  = new ReentrantLock();
+        lock.lock();
+        TwoSum o = new TwoSum();
+        o.finalize();
     }
 
     public int[] twoSum(int[] nums, int target) {

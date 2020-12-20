@@ -1,12 +1,15 @@
 package com.mark.code.leetcode.hard;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class IsScramble {
     public static void main(String[] args) {
         IsScramble isScramble = new IsScramble();
         System.out.println(isScramble.isScramble("great", "rgeat"));
+        System.out.println(isScramble.grayCode(5));
     }
 
     public boolean isScramble(String s1, String s2) {
@@ -37,4 +40,18 @@ public class IsScramble {
         }
         return false;
     }
+
+    public List<Integer> grayCode(int n) {
+        List<Integer> res = new ArrayList<Integer>() {{
+            add(0);
+        }};
+        int head = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = res.size() - 1; j >= 0; j--)
+                res.add(head + res.get(j));
+            head <<= 1;
+        }
+        return res;
+    }
+
 }
