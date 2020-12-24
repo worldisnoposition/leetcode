@@ -1,21 +1,24 @@
 package com.mark.code.leetcode.medium;
 
 import com.mark.code.leetcode.common.ListNode;
+import com.mark.code.leetcode.common.TreeNode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        ListNode first = new ListNode(1);
-        first.next = new ListNode(2);
-        first.next.next = new ListNode(3);
-        first.next.next.next = new ListNode(4);
-        first.next.next.next.next = new ListNode(5);
-        ListNode result = solution.reverseBetween(first, 2, 4);
-        System.out.println(result);
-        System.out.println(solution.restoreIpAddresses("25525511135"));
+//        ListNode first = new ListNode(1);
+//        first.next = new ListNode(2);
+//        first.next.next = new ListNode(3);
+//        first.next.next.next = new ListNode(4);
+//        first.next.next.next.next = new ListNode(5);
+//        ListNode result = solution.reverseBetween(first, 2, 4);
+//        System.out.println(result);
+//        System.out.println(solution.restoreIpAddresses("25525511135"));
+        System.out.println(solution.generateTrees(3));
     }
 
     public ListNode reverseBetween(ListNode head, int m, int n) {
@@ -75,5 +78,41 @@ public class Solution {
         } else if (i == s.length() && count == 0) {
             result.add(sb.substring(0, sb.length() - 1));
         }
+    }
+
+    public List<TreeNode> generateTrees(int n) {
+        if (n == 0) {
+            return new LinkedList<>();
+        }
+        return generateTrees(1, n);
+    }
+
+    private List<TreeNode> generateTrees(int start, int end) {
+        List<TreeNode> list = new LinkedList<>();
+        if (start >= end) {
+            list.add(null);
+            return list;
+        }
+        for (int i = start; i < end; i++) {
+            List<TreeNode> left = generateTrees(start, i - 1);
+            List<TreeNode> right = generateTrees(i + 1, end);
+            for (TreeNode l : left) {
+                for (TreeNode r : right) {
+                    TreeNode treeNode = new TreeNode(i);
+                    treeNode.left = l;
+                    treeNode.right = r;
+                    list.add(treeNode);
+                }
+            }
+        }
+        return list;
+    }
+
+    private TreeNode clone(TreeNode treeNode) {
+        return null;
+    }
+
+    public boolean isInterleave(String s1, String s2, String s3) {
+        return false;
     }
 }
