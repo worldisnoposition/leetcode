@@ -18,7 +18,8 @@ public class Solution {
 //        ListNode result = solution.reverseBetween(first, 2, 4);
 //        System.out.println(result);
 //        System.out.println(solution.restoreIpAddresses("25525511135"));
-        System.out.println(solution.generateTrees(3));
+//        System.out.println(solution.generateTrees(3));
+        solution.recoverTree(null);
     }
 
     public ListNode reverseBetween(ListNode head, int m, int n) {
@@ -126,5 +127,43 @@ public class Solution {
             }
         }
         return dp[n];
+    }
+
+    public void recoverTree(TreeNode root) {
+        ArrayList<TreeNode> list = new ArrayList<>();
+        recoverTree(root, list);
+        list.add(new TreeNode(1));
+        list.add(new TreeNode(3));
+        list.add(new TreeNode(2));
+        list.add(new TreeNode(4));
+        if (list.size() > 1) {
+            TreeNode last1 = null;
+            TreeNode last2 = null;
+            for (int i = 0; i < list.size() - 1; i++) {
+                if (list.get(i + 1).val < list.get(i).val) {
+                    last2 = list.get(i + 1);
+                    if (last1 == null) {
+                        last1 = list.get(i);
+                    } else {
+                        break;
+                    }
+                }
+            }
+            int temp = last2.val;
+            last2.val = last1.val;
+            last1.val = temp;
+        }
+    }
+
+    public void recoverTree(TreeNode root, ArrayList<TreeNode> list) {
+        if (root != null) {
+            if (root.left != null) {
+                recoverTree(root.left, list);
+            }
+            list.add(root);
+            if (root.right != null) {
+                recoverTree(root.right, list);
+            }
+        }
     }
 }
