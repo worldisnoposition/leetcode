@@ -113,10 +113,6 @@ public class Solution {
         return null;
     }
 
-    public boolean isInterleave(String s1, String s2, String s3) {
-        return false;
-    }
-
     public int numTrees(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 1;
@@ -165,5 +161,22 @@ public class Solution {
                 recoverTree(root.right, list);
             }
         }
+    }
+
+    public boolean isInterleave(String s1, String s2, String s3) {
+        boolean[] dp = new boolean[s2.length()];
+        dp[0] = true;
+        for (int i = 0; i <= s1.length(); ++i) {
+            for (int j = 0; j <= s2.length(); ++j) {
+                int p = i + j - 1;
+                if (i > 0) {
+                    dp[j] = dp[j] && s1.charAt(i - 1) == s3.charAt(p);
+                }
+                if (j > 0) {
+                    dp[j] = dp[j] || (dp[j - 1] && s2.charAt(j - 1) == s3.charAt(p));
+                }
+            }
+        }
+        return dp[s3.length()];
     }
 }
